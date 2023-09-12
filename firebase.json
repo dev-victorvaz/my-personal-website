@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "victor-vaz",
     "public": "dist/victor-vaz",
     "ignore": [
       "firebase.json",

@@ -1,0 +1,65 @@
+div.header {
+    background: #232323;
+    width: 100%;
+    height: 409px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    h1.my-name {
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        left: 353px;
+        top: 98px;
+    }
+  
+    h2.developer {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        top: 88px;
+        left: 356px;
+    }
+  
+    p.description {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        top: 211px;
+        left: 353px;
+    }
+  
+    img.victor-vaz-image {
+        width: 256px;
+        height: 256px;
+        border-radius: 256px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  
+    div.victor-vaz-photo-frame {
+        position: absolute;
+        top: 77px;
+        left: 65px;
+        display: flex;
+        width: 256px;
+        height: 256px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+  }
+  
