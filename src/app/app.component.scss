@@ -43,14 +43,11 @@ div.header {
         left: 353px;
     }
   
-    img.victor-vaz-image {
+    img.me {
         width: 256px;
         height: 256px;
         border-radius: 256px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-  
-    div.victor-vaz-photo-frame {
         position: absolute;
         top: 77px;
         left: 65px;
@@ -62,4 +59,199 @@ div.header {
         flex-shrink: 0;
     }
   }
+
+div.expertise {
+    h2.expertise-title {
+        color: #000;
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: absolute;
+        top: 408px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    img.expertise-image-sql {
+        width: 95.907px;
+        height: 128.001px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 530px;
+        left: 80px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    img.expertise-image-angular {
+        width: 95.907px;
+        height: 128.001px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 530px;
+        left: 256px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    img.expertise-image-azure-devops {
+        width: 95.907px;
+        height: 128.001px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 530px;
+        left: 448px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    img.expertise-image-java {
+        width: 95.907px;
+        height: 128.001px;
+        flex-shrink: 0;
+        position: absolute;
+        top: 530px;
+        left: 640px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    p.expertise-title-sql {
+        color: #000;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        position: absolute;
+        top: 639px;
+        left: 99px;
+    }
+
+    p.expertise-title-angular {
+        color: #000;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        position: absolute;
+        top: 639px;
+        left: 256px;
+    }
+
+    p.expertise-title-azure-devops {
+        color: #000;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        position: absolute;
+        top: 639px;
+        left: 448px;
+        width: 110px;
+    }
+
+    p.expertise-title-java {
+        color: #000;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        position: absolute;
+        top: 639px;
+        left: 640px;
+    }
+}
   
+  @media only screen and (max-width: 768px) {
+    div.header {
+        height: 602px;
+
+        p.description {
+            top: 445px;
+            left: 9%;
+            width: 90%;
+        }
+
+        h1.my-name {
+            top: 340px;
+            left: 9%;
+            width: 90%;
+        }
+      
+        h2.developer {
+            top: 340px;
+            left: 9%;
+            width: 90%;
+        }
+
+        img.me {
+            top: 77px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    div.expertise {
+        h2.expertise-title {
+            top: 595px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        img.expertise-image-sql {
+            top: 695px;
+            left: 130px;
+        }
+    
+        img.expertise-image-angular {
+            top: 929px;
+            left: 130px;
+        }
+    
+        img.expertise-image-azure-devops {
+            top: 1163px;
+            left: 130px;
+        }
+    
+        img.expertise-image-java {
+            top: 1435px;
+            left: 130px;
+        }
+    
+        p.expertise-title-sql {
+            top: 807px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        p.expertise-title-angular {
+            top: 1041px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        p.expertise-title-azure-devops {
+            top: 1275px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        p.expertise-title-java {
+            top: 1547px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+  }
