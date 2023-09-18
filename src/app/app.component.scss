@@ -2,9 +2,11 @@ div.header {
     background: #232323;
     width: 100%;
     height: 409px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    margin: auto;
+
+    div.empty-space {
+        display: none;
+    }
 
     h1.my-name {
         color: #FFF;
@@ -14,9 +16,9 @@ div.header {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        position: absolute;
-        left: 353px;
-        top: 98px;
+        padding-left: 353px;
+        margin: 0;
+        margin-top: -8px;
     }
   
     h2.developer {
@@ -26,9 +28,9 @@ div.header {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        position: absolute;
-        top: 88px;
-        left: 356px;
+        padding-top: 116px;
+        padding-left: 353px;
+        margin: 0;
     }
   
     p.description {
@@ -38,9 +40,9 @@ div.header {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        position: absolute;
-        top: 211px;
-        left: 353px;
+        padding-left: 353px;
+        padding-top: 5px;
+        margin: 0;
     }
   
     img.me {
@@ -48,15 +50,14 @@ div.header {
         height: 256px;
         border-radius: 256px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        position: absolute;
-        top: 77px;
-        left: 65px;
-        display: flex;
+        margin-top: 77px;
+        margin-left: 65px;
         width: 256px;
         height: 256px;
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
+        position: absolute;
     }
   }
 
@@ -68,10 +69,6 @@ div.expertise {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        position: absolute;
-        top: 408px;
-        left: 0;
-        width: 100%;
         text-align: center;
     }
 
@@ -173,83 +170,95 @@ div.expertise {
     div.header {
         height: 602px;
 
+        div.empty-space {
+            display: inline-block;
+            height: 53px;
+        }
+
         p.description {
-            top: 445px;
-            left: 9%;
-            width: 90%;
+            padding-left: 9%;
+            width: 91%;
         }
 
         h1.my-name {
-            top: 340px;
-            left: 9%;
-            width: 90%;
+            padding-left: 9%;
+            width: 91%;
         }
       
         h2.developer {
-            top: 340px;
-            left: 9%;
-            width: 90%;
+            padding-top: 31px;
+            padding-left: 9%;
+            width: 91%;
         }
 
         img.me {
-            top: 77px;
-            margin-left: auto;
-            margin-right: auto;
+            position: initial;
+            display: block;
+            margin: auto;
         }
     }
 
     div.expertise {
         h2.expertise-title {
-            top: 595px;
-            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
             text-align: center;
         }
     
         img.expertise-image-sql {
-            top: 695px;
-            left: 130px;
+            position: initial;
+            display: block;
+            margin: auto;
         }
     
         img.expertise-image-angular {
-            top: 929px;
-            left: 130px;
+            position: initial;
+            display: block;
+            margin: auto;
         }
     
         img.expertise-image-azure-devops {
-            top: 1163px;
-            left: 130px;
+            position: initial;
+            display: block;
+            margin: auto;
         }
     
         img.expertise-image-java {
-            top: 1435px;
-            left: 130px;
+            position: initial;
+            display: block;
+            margin: auto;
         }
     
         p.expertise-title-sql {
-            top: 807px;
-            left: 0;
-            width: 100%;
+            position: initial;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
             text-align: center;
         }
     
         p.expertise-title-angular {
-            top: 1041px;
-            left: 0;
-            width: 100%;
+            position: initial;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
             text-align: center;
         }
     
         p.expertise-title-azure-devops {
-            top: 1275px;
-            left: 0;
-            width: 100%;
+            position: initial;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
+            width: 110px;
             text-align: center;
         }
     
         p.expertise-title-java {
-            top: 1547px;
-            left: 0;
-            width: 100%;
+            position: initial;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5px;
             text-align: center;
         }
     }
