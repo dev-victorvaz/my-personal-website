@@ -1,11 +1,11 @@
 div.header {
     background: #232323;
-    width: 100%;
+    width: 93%;
     height: fit-content;
     margin: auto;
     padding-top: 70px;
     padding-bottom: 70px;
-    padding-left: 30px;
+    padding-left: 7%;
     display: flex;
 
     div.me-frame {
@@ -42,7 +42,7 @@ div.header {
             margin: 0;
         }
     }
-  }
+}
 
 div.expertise {
     color: #000;
@@ -76,13 +76,49 @@ div.expertise {
         }
     }
 }
+
+div.my-github {
+    background: #F1F1F1;
+    height: fit-content;
+    width: 93%;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    padding-left: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    div.my-github-logo-frame {
+        text-align: right;
+        padding-right: 80px;
+
+        img.my-github-logo {
+            width: 256px;
+            height: 256px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    div.my-github-text-frame {
+        padding-top: 10px;
+
+        h2.my-github-title {
+            font-size: 48px;
+        }
+
+        a.my-github-link {
+            color: #000;
+            font-family: Roboto Mono;
+        }
+    }
+}
   
   @media only screen and (max-width: 768px) {
     div.header {
         height: fit-content;
+        width: 97%;
         padding-top: 53px;
         padding-bottom: 53px;
-        padding-left: 0;
+        padding-left: 3%;
         display: block;
         
         div.me-frame {
@@ -90,8 +126,7 @@ div.expertise {
         }
 
         div.me-bio {
-            padding-left: 8%;
-            width: 91%;
+            width: 90%;
         }
     }
 
@@ -99,13 +134,37 @@ div.expertise {
         div.expertises {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            text-align: center;
-            width: 91%;
-            padding-left: 8%;
+            justify-items: center;
+            width: 100%;
 
             div.expertise-item {
                 margin-left: 0;
-                margin-right: 20px;
+            }
+        }
+    }
+
+    div.my-github {
+        position: relative;
+        display: flex;
+
+        div.my-github-logo-frame {
+            position: absolute;
+            top: 22%;
+            right: 10%;
+            padding: 0;
+
+            img.my-github-logo {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    
+        div.my-github-text-frame {
+            margin-top: 0;
+            padding-left: 3%;
+
+            h2.my-github-title {
+                margin: 0;
             }
         }
     }
