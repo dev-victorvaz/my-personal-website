@@ -3,41 +3,36 @@ div.header {
     width: 93%;
     height: fit-content;
     margin: auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 7%;
     display: flex;
 
     div.me-frame {
         img.me {
-            width: 256px;
-            height: 256px;
-            border-radius: 256px;
+            width: 128px;
+            height: 128px;
+            border-radius: 128px;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            width: 256px;
-            height: 256px;
         }
     }
 
     div.me-bio {
         padding-left: 20px;
-        padding-top: 35px;
+        padding-top: 15px;
         color: #FFF;
 
         h1.my-name {
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            font-size: 72px;
             margin: 0;
             margin-top: -8px;
         }
       
-        h2.developer {
-            font-size: 32px;
+        h3.developer {
             margin: 0;
         }
       
         p.description {
-            font-size: 21px;
             padding-top: 5px;
             margin: 0;
         }
@@ -45,33 +40,32 @@ div.header {
 }
 
 div.expertise {
-    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     h2.expertise-title {
-        font-size: 48px;
-        text-align: center;
+        padding-left: 7%;
     }
 
     div.expertises {
         display: flex;
 
         div.expertise-item {
-            width: 156px;
+            width: 64px;
             height: fit-content;
             display: inline;
             text-align: center;
-            margin-left: 70px;
+            margin-left: 80px;
 
             img.expertise-item-image {
-                width: 128px;
-                height: 128px;
+                width: 64px;
+                height: 64px;
                 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             }
 
             p.expertise-item-title {
-                font-size: 32px;
                 text-align: center;
-                margin-top: 20px;
+                margin-top: 5px;
             }
         }
     }
@@ -81,8 +75,8 @@ div.my-github {
     background: #F1F1F1;
     height: fit-content;
     width: 93%;
-    padding-top: 53px;
-    padding-bottom: 53px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 7%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,18 +86,14 @@ div.my-github {
         padding-right: 80px;
 
         img.my-github-logo {
-            width: 256px;
-            height: 256px;
+            width: 128px;
+            height: 128px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     }
 
     div.my-github-text-frame {
-        padding-top: 10px;
-
-        h2.my-github-title {
-            font-size: 48px;
-        }
+        margin-top: -15px;
 
         a.my-github-link {
             color: #000;
@@ -123,6 +113,11 @@ div.my-github {
         
         div.me-frame {
             text-align: center;
+
+            img.me {
+                width: 256px;
+                height: 256px;
+            }
         }
 
         div.me-bio {
@@ -133,7 +128,7 @@ div.my-github {
     div.expertise {
         div.expertises {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
             width: 100%;
 
@@ -149,13 +144,13 @@ div.my-github {
 
         div.my-github-logo-frame {
             position: absolute;
-            top: 22%;
+            top: 15%;
             right: 10%;
             padding: 0;
 
             img.my-github-logo {
-                width: 64px;
-                height: 64px;
+                width: 32px;
+                height: 32px;
             }
         }
     
