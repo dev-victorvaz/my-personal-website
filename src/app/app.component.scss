@@ -101,8 +101,39 @@ div.my-github {
         }
     }
 }
+
+div.contact {
+    padding-left: 7%;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    a.contact-email {
+        color: #000;
+    }
+
+    div.contact-icons-div {
+        margin-left: -6px;
+
+        img.contact-icons {
+            margin-left: 6px;
+        }
+    }
+}
+
+div.footer {
+    background: #232323;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    p.footer-description {
+        color: #FFF;
+    }
+}
   
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     div.header {
         height: fit-content;
         width: 97%;
@@ -156,11 +187,18 @@ div.my-github {
     
         div.my-github-text-frame {
             margin-top: 0;
-            padding-left: 3%;
 
             h2.my-github-title {
                 margin: 0;
             }
         }
     }
-  }
+
+    div.contact {
+        div.contact-icons-div {
+            img.contact-icons {
+                margin-right: 6px;
+            }
+        }
+    }
+}
