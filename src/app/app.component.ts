@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 
 @Component({
@@ -6,15 +6,21 @@ import { Meta } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private meta: Meta) {}
 
   ngOnInit(): void {
     this.meta.addTag({
-      keywords: 'Angular, SQL, DevOPS, Java, Developer, Programmer',
-      description: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.',
-      author: 'Victor Vaz',
-      image: '/assets/images/victor-vaz.jpg'
+      name: 'description', content: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.'
+    });
+    this.meta.addTag({
+      name: 'keywords', content: 'Angular, SQL, DevOPS, Java, Developer, Programmer'
+    });
+    this.meta.addTag({
+      name: 'author', content: 'Victor Vaz'
+    });
+    this.meta.addTag({
+      content: '/assets/images/victor-vaz.jpg', itemprop: 'image'
     });
   }
 
