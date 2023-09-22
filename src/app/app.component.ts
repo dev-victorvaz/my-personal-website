@@ -20,7 +20,19 @@ export class AppComponent implements OnInit {
       name: 'author', content: 'Victor Vaz'
     });
     this.meta.addTag({
-      content: '/assets/images/victor-vaz.jpg', itemprop: 'image'
+      content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg', itemprop: 'image'
+    });
+
+    this.meta.addTag({
+      property: 'og:title', content: 'Victor Vaz'
+    });
+
+    this.meta.addTag({
+      property: 'og:description', content: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.'
+    });
+
+    this.meta.addTag({
+      property: 'og:image', content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg'
     });
   }
 
