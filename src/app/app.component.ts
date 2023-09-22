@@ -11,8 +11,9 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.meta.addTag({
-      name: 'Victor Vaz',
-      content: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.',
+      keywords: 'Angular, SQL, DevOPS, Java, Developer, Programmer',
+      description: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.',
+      author: 'Victor Vaz',
       image: '/assets/images/victor-vaz.jpg'
     });
   }
