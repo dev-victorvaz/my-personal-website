@@ -22,15 +22,16 @@ export class AppComponent implements OnInit {
     this.meta.addTag({
       content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg', itemprop: 'image'
     });
+    this.meta.addTag({
+      httpEquiv: 'refresh', content: '30'
+    });
 
     this.meta.addTag({
       property: 'og:title', content: 'Victor Vaz'
     });
-
     this.meta.addTag({
       property: 'og:description', content: 'I have 23 years old, and I’m so glad for be part of technology area. Always keep myself constantly learning.'
     });
-
     this.meta.addTag({
       property: 'og:image', content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg'
     });
