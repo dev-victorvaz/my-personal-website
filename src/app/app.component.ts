@@ -22,9 +22,6 @@ export class AppComponent implements OnInit {
     this.meta.addTag({
       content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg', itemprop: 'image'
     });
-    this.meta.addTag({
-      httpEquiv: 'refresh', content: '30'
-    });
 
     this.meta.addTag({
       property: 'og:title', content: 'Victor Vaz'
