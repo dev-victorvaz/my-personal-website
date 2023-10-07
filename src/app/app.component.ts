@@ -32,6 +32,21 @@ export class AppComponent implements OnInit {
     this.meta.addTag({
       property: 'og:image', content: 'https://www.victorvaz.com/assets/images/victor-vaz.jpg'
     });
+    this.meta.addTag({
+      property: 'og:image:width', content: '512'
+    });
+    this.meta.addTag({
+      property: 'og:image:height', content: '512'
+    });
+    this.meta.addTag({
+      property: 'og:image:type', content: 'image/jpeg'
+    });
+    this.meta.addTag({
+      name: 'twitter:card', content: 'summary_large_image'
+    });
+    this.meta.addTag({
+      name: 'twitter:image', content: 'https://lmmanutencoes.com/assets/images/lm-manutencoes-logo.jpg'
+    });
   }
 
   title = 'Victor Vaz';
