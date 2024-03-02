@@ -1,0 +1,35 @@
+div.videos-structure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div.videos-container {
+        display: block;
+        text-align: center;
+        width: 800px;
+        position: relative;
+
+        div.video-element {
+            display: inline-block;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            margin: 3px;
+        }
+    }
+}
+
+.only-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    div.page-body {
+        margin-top: 1.8vh;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+}

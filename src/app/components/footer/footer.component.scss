@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    border-top: 1px solid var(--color-div-border);
+
+    div.page-body {
+        padding-bottom: 1.5vh;
+    }
+}
+
+button.language-button {
+    color: var(--color-page-text);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    top: -1vh;
+    right: 4vh;
+    
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 768px) {
+    div.page-body {
+        margin-top: 1.8vh;
+    }
+}

@@ -1,0 +1,113 @@
+<!-- Menu -->
+
+<div class="navigation">
+    <button mat-button class="nav-button" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <ul>
+            <li><mat-icon>home</mat-icon></li>
+            <li i18n="Home navigation|Navigation menu to home|@@homeNav">Home</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="skills" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>description</mat-icon></li>
+            <li i18n="Skills navigation|Navigation skills to home|@@skillsNav">Skills</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="portfolio" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>dashboard</mat-icon></li>
+            <li i18n="Portfolio navigation|Navigation portfolio to home|@@portfolioNav">Portfolio</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="contact" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>contact_page</mat-icon></li>
+            <li i18n="Contact navigation|Navigation contact to contact|@@contactNav">Contact</li>
+        </ul>
+    </button>
+
+    <div class="navigation-bottom">
+        <button mat-button class="nav-button" (click)="toggleThemeSwitch()" id="navigationBottomId">
+            <ul>
+                <li><mat-icon>invert_colors</mat-icon></li>
+                <li i18n="Theme navigation|Theme navigation button|@@themeNav">Theme</li>
+            </ul>
+        </button>
+    </div>
+</div>
+
+<!-- Mobile menu -->
+
+<button mat-mini-fab color="primary" aria-label="Menu toggle" class="navigation-toggle" id="navigationToggleId" (click)="toggleMobileMenu()">
+    <mat-icon>menu</mat-icon>
+</button>
+
+<div class="navigation-mobile mobile-hidden" id="navigationMobileId">
+    <button mat-button class="nav-button" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        <ul>
+            <li><mat-icon>home</mat-icon></li>
+            <li i18n="Home navigation|Navigation menu to home|@@homeNavMobile">Home</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="skills" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>description</mat-icon></li>
+            <li i18n="Skills navigation|Navigation skills to home|@@skillsNavMobile">Skills</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="portfolio" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>dashboard</mat-icon></li>
+            <li i18n="Portfolio navigation|Navigation portfolio to home|@@portfolioNavMobile">Portfolio</li>
+        </ul>
+    </button>
+
+    <button mat-button class="nav-button" routerLink="contact" routerLinkActive="active-link">
+        <ul>
+            <li><mat-icon>contact_page</mat-icon></li>
+            <li i18n="Contact navigation|Navigation contact to contact|@@contactMobile">Contact</li>
+        </ul>
+    </button>
+
+    <div class="navigation-bottom">
+        <button mat-button class="nav-button" (click)="toggleThemeSwitch()" id="navigationMobileBottomId">
+            <ul>
+                <li><mat-icon>invert_colors</mat-icon></li>
+                <li i18n="Theme navigation|Theme navigation button|@@themeNavMobile">Theme</li>
+            </ul>
+        </button>
+    </div>
+</div>
+
+<!-- Theme Switch -->
+<div class="theme-switch-container" id="themeSwitchId">
+    <div class="theme-switch">
+        <button mat-button class="nav-button" (click)="toggleDarkMode()">
+            <ul>
+                <li><mat-icon>dark_mode</mat-icon></li>
+                <li i18n="Dark mode toggle|Toggle to dark mode|@@darkModeNav">Dark</li>
+            </ul>
+        </button>
+    
+        <button mat-button class="nav-button" (click)="toggleLightMode()">
+            <ul>
+                <li><mat-icon>light_mode</mat-icon></li>
+                <li i18n="Light mode toggle|Toggle to light mode|@@lightModeNav">Light</li>
+            </ul>
+        </button>
+    
+        <button mat-button class="nav-button" (click)="toggleSystemMode()">
+            <ul>
+                <li><mat-icon>invert_colors</mat-icon></li>
+                <li i18n="System mode toggle|Toggle to system mode|@@systemModeNav">System</li>
+            </ul>
+        </button>
+    </div>
+</div>
+
+<div class="page-content page-content-off" (touchstart)="handleTouchStart($event)" id="pageContent"></div>

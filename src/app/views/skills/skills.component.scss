@@ -1,0 +1,47 @@
+.item-card {
+    margin: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.item-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.item-image {
+    width: 300px;
+    height: 150px;
+}
+
+div.skills-structure {
+    display: flex;
+    margin: 0 4vh 0 0;
+
+    div.skill-container {
+        display: block;
+        width: 90%;
+        position: relative;
+
+        div.skill-element {
+            display: inline-block;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            margin: 3px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.skills-structure {
+        margin: 0 4vh 0 4vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        div.skill-container {
+            text-align: center;
+        }
+    }
+}

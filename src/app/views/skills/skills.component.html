@@ -1,0 +1,117 @@
+<app-page-header></app-page-header>
+
+<div class="page-body">
+    <p class="page-text" i18n="Skills description|Skills initial description@@skillsDescription">
+        These are my skills:
+    </p>
+
+    <br>
+    <h3>Frameworks:</h3>
+
+    <div class="skills-structure">
+        <div class="skill-container">
+            <div class="skill-element">
+                <mat-card class="item-card">
+                    <mat-card-header>
+                        <mat-card-title>Angular</mat-card-title>
+                        <mat-card-subtitle i18n="Angular level|My proficiency level in Angular@@angularProficiency">Intermediary</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="/assets/images/angular.svg" alt="Angular icon" class="item-image">
+                    <mat-card-content i18n="Angular content|Description of my skill in Angular@@angularContent">
+                        <p>
+                            <br>
+                            I learned Angular at my college in the 4th period. I did some college work and started some projects with him.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button disabled="" i18n="Angular certificate|Certificate button for Angular@@angularCertificate">CERTIFICATE</button>
+                    </mat-card-actions>
+                    <mat-card-footer>
+                        <mat-progress-bar mode="determinate"></mat-progress-bar>
+                    </mat-card-footer>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h3 i18n="Skills programming language title|Skills programming language title@@skillsProgrammingLanguageTitle">Programming languages:</h3>
+
+    <div class="skills-structure">
+        <div class="skill-container">
+            <div class="skill-element">
+                <mat-card class="item-card">
+                    <mat-card-header>
+                        <mat-card-title>Java</mat-card-title>
+                        <mat-card-subtitle i18n="Java level|My proficiency level in Java@@javaProficiency">Basic</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="/assets/images/java.svg" alt="Java icon" class="item-image">
+                    <mat-card-content i18n="Java content|Description of my skill in Java@@javaContent">
+                        <p>
+                            <br>
+                            I learned Java in the 2th period of college and used it in the 4th as well. I did a lot of exercises with Java.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button (click)="openJavaCertificate()" i18n="Java certificate|Certificate button for Java@@javaCertificate">CERTIFICATE</button>
+                    </mat-card-actions>
+                    <mat-card-footer>
+                        <mat-progress-bar mode="determinate"></mat-progress-bar>
+                    </mat-card-footer>
+                </mat-card>
+            </div>
+
+            <div class="skill-element">
+                <mat-card class="item-card">
+                    <mat-card-header>
+                        <mat-card-title>SQL</mat-card-title>
+                        <mat-card-subtitle i18n="SQL level|My proficiency level in SQL@@sqlProficiency">Intermediary</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="/assets/images/sql.svg" alt="SQL icon" class="item-image">
+                    <mat-card-content i18n="SQL content|Description of my skill in SQL@@sqlContent">
+                        <p>
+                            <br>
+                            I used SQL in the 2th and 5th period of college. Doing various exercises and a college assignment.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button (click)="openSqlCertificate()" i18n="SQL certificate|Certificate button for SQL@@sqlCertificate">CERTIFICATE</button>
+                    </mat-card-actions>
+                    <mat-card-footer>
+                        <mat-progress-bar mode="determinate"></mat-progress-bar>
+                    </mat-card-footer>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h3 i18n="Skills technologies title|Skills technologies title@@skillsTechnologiesTitle">Technologies:</h3>
+
+    <div class="skills-structure">
+        <div class="skill-container">
+            <div class="skill-element">
+                <mat-card class="item-card">
+                    <mat-card-header>
+                        <mat-card-title>Azure DevOps</mat-card-title>
+                        <mat-card-subtitle i18n="Azure DevOps level|My proficiency level in Azure DevOps@@azureProficiency">Basic</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="/assets/images/azure-devops.svg" alt="Azure DevOps icon"
+                        class="item-image">
+                    <mat-card-content i18n="Azure DevOps content|Azure DevOps of my skill in Azure DevOps@@azureContent">
+                        <p>
+                            <br>
+                            I learned Azure DevOps in the 4th period of college and did a college project with it.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button (click)="openAzureDevOpsCertificate()" i18n="Java certificate|Certificate button for Java@@javaCertificate">CERTIFICATE</button>
+                    </mat-card-actions>
+                    <mat-card-footer>
+                        <mat-progress-bar mode="determinate"></mat-progress-bar>
+                    </mat-card-footer>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

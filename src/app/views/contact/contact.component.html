@@ -1,0 +1,38 @@
+<app-page-header></app-page-header>
+
+<div class="page-body">
+  <p class="page-text" i18n="Contact description|Description area for contact page@@contactDescription">
+    You can reach me through my email or social medias or sending a message directly using the form below.<br>
+    <a href="mailto:contact@victorvaz.com" class="contact-email">contact&#64;victorvaz.com</a>
+  </p>
+
+  <div class="contact-icons-div">
+    <a href="https://www.linkedin.com/in/dev-victorvaz/" target="_blank"><img src="/assets/images/linkedin.svg"
+        alt="LinkedIn" class="contact-icons"></a>
+    <a href="https://www.facebook.com/dev.victorvaz" target="_blank"><img src="/assets/images/facebook.svg"
+        alt="Facebook" class="contact-icons"></a>
+    <a href="https://www.instagram.com/dev_victorvaz/" target="_blank"><img src="/assets/images/instagram.svg"
+        alt="Instagram" class="contact-icons"></a>
+    <a href="https://www.youtube.com/@dev-victorvaz" target="_blank"><img src="/assets/images/youtube.svg" alt="YouTube"
+        class="contact-icons"></a>
+  </div>
+  <br>
+
+  <div class="form-div">
+    <div class="form-container">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label i18n="Title label|Title label for the form@@contactTitleLabel">Title</mat-label>
+          <input matInput type="text" placeholder="Ex. Good morning, Victor" i18n-placeholder="Input for title label|Input for title label for the form@@contactTitleInput">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label i18n="Text camp label|Text camp label for the form@@contactTextLabel">Leave your message</mat-label>
+          <textarea matInput placeholder="Ex. I contacted to..." i18n-placeholder="Text camp input|Text camp input for the form@@contactTextInput"></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button class="send" i18n="Send button|Send button for the form@@contactSendButton">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

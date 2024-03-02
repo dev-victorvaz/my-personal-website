@@ -1,0 +1,19 @@
+<footer>
+    <div class="page-body">
+        <div class="row">
+            <div class="column">
+                <p class="page-text" i18n="Footer copyrights|Copyrights text@@copyright">© 2024 by Victor Vaz</p>
+            </div>
+            <div class="column">
+                <div class="right">
+                    <button mat-button [matMenuTriggerFor]="menu"
+                        class="language-button"><mat-icon>language</mat-icon>Language</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item href="/en">Português</button>
+                        <button mat-menu-item href="/pt">English</button>
+                    </mat-menu>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

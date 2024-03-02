@@ -1,0 +1,49 @@
+div.contact-icons-div {
+    margin-left: -6px;
+
+    img.contact-icons {
+        margin-left: 6px;
+    }
+}
+
+div.form-div {
+//    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div.form-container {
+        width: 80%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .example-form {
+            width: 100%;
+        }
+
+        .example-full-width {
+            width: 100%;
+
+            textarea {
+                height: 300px;
+            }
+        }
+
+        button.send {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.contact-icons-div {
+        margin-left: 4vh;
+    }
+}

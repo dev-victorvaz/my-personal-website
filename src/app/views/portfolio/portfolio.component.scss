@@ -1,0 +1,23 @@
+div.tab-group-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-tab-group.tab-group {
+        width: 95%;
+
+        p.image-link {
+            text-align: center;
+        }
+    }
+    
+    div.image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img.portfolio-image {
+            max-width: 95%;
+        }
+    }
+}

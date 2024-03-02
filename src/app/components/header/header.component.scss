@@ -1,0 +1,73 @@
+div.header {
+    background-color: var(--color-bg);
+    height: fit-content;
+    margin: auto;
+    margin-top: 1.8vh;
+    padding-bottom: 1.8vh;
+    padding-left: 16vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-div-border);
+
+    div.me-frame {
+        img.me {
+            width: 128px;
+            height: 128px;
+            border-radius: 128px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    div.me-bio {
+        padding-left: 20px;
+        padding-top: 23px;
+
+        h1.my-name {
+            background: linear-gradient(to right, #ff4081, #3f51b5);
+            background-clip: text;
+            width: fit-content;
+            color: transparent;
+            margin: 0;
+            margin-top: -8px;
+        }
+      
+        h3.developer {
+            background: linear-gradient(to right, #ff4081, #3f51b5);
+            background-clip: text;
+            width: fit-content;
+            color: transparent;
+            margin: 0;
+            margin-top: 10px;
+        }
+      
+        p.description {
+            margin: 0;
+            color: var(--color-page-text);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.header {
+        height: fit-content;
+        padding-bottom: 3vh;
+        padding-left: 1.8vh;
+        display: block;
+        margin-top: 10vh;
+        
+        div.me-frame {
+            text-align: center;
+
+            img.me {
+                width: 128px;
+                height: 128px;
+                border-radius: 32px;
+            }
+        }
+
+        div.me-bio {
+            width: 90%;
+        }
+    }
+}
